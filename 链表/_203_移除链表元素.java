@@ -15,10 +15,12 @@ public class _203_移除链表元素 {
             while (node.next != null) {
                 if (node.next.val == val) {
                     node.next = node.next.next;
-                } else
+                } else {
                     node = node.next;
+                }
             }
         }
+
         return head;
     }
 }
