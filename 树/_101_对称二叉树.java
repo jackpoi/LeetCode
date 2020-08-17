@@ -1,4 +1,4 @@
-package 二叉树;
+package 树;
 
 /**
  * https://leetcode-cn.com/problems/symmetric-tree/
