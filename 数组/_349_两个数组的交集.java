@@ -1,4 +1,4 @@
-package 集合;
+package 数组;
 
 import java.util.Arrays;
 import java.util.HashSet;
