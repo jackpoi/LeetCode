@@ -1,4 +1,4 @@
-package 栈;
+package 栈_队列;
 
 import java.util.Stack;
 

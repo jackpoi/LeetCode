@@ -1,6 +1,5 @@
-package 栈;
+package 栈_队列;
 
-import java.util.Queue;
 import java.util.Stack;
 
 /**
