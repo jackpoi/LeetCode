@@ -4,10 +4,49 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
+ * https://leetcode-cn.com/problems/sliding-window-maximum/
+ *
  * @author beastars
  */
 public class _239_滑动窗口最大值 {
     public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0 || k < 1)
+            return new int[0];
+        if (k == 1)
+            return nums;
+
+        int[] maxes = new int[nums.length - k + 1];
+        int maxIdx = 0; // 存放窗口中最大值的索引
+
+        for (int i = 1; i < k; i++) { // 初始化第一个窗口的最大值索引
+            if (nums[i] >= nums[maxIdx]) {
+                maxIdx = i;
+            }
+        }
+        maxes[0] = nums[maxIdx];
+
+        for (int li = 1; li < maxes.length; li++) {
+            int ri = li + k - 1; // 滑动窗口的右索引
+            if (maxIdx < li) { // 判断最大值索引是否合法
+                // 如果不合法，重新计算
+                maxIdx = li;
+                for (int i = li + 1; i <= ri; i++) { // 初始化第一个窗口的最大值索引
+                    if (nums[i] >= nums[maxIdx]) {
+                        maxIdx = i;
+                    }
+                }
+            } else if (nums[ri] >= nums[maxIdx]) {
+                // 如果合法，且窗口新添加的元素比最大的要大，更新
+                maxIdx = ri;
+            }
+
+            maxes[li] = nums[maxIdx];
+        }
+
+        return maxes;
+    }
+
+    public int[] maxSlidingWindow_deque(int[] nums, int k) {
         if (nums == null || nums.length == 0 || k < 1)
             return new int[0];
         if (k == 1)
