@@ -10,8 +10,9 @@ import java.util.List;
  * @author beastars
  */
 public class _145_二叉树的后序遍历 {
+    private List<Integer> list = new ArrayList<>();
+
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
         LinkedList<TreeNode> stack = new LinkedList<>();
         TreeNode curr = root, last = null;
 
@@ -37,7 +38,6 @@ public class _145_二叉树的后序遍历 {
     }
 
     public List<Integer> postorderTraversal2(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
         if (root == null)
             return list;
 
@@ -65,4 +65,33 @@ public class _145_二叉树的后序遍历 {
 
         return list;
     }
+
+    /**
+     * 利用 Morris 后序遍历二叉树
+     * 时间复杂度 O(n)
+     * 空间复杂度 O(1)
+     */
+    /*public List<Integer> postorderTraversal(TreeNode root) {
+        TreeNode node = root;
+
+        while (node != null) {
+            if (node.left != null) {
+                TreeNode pred = node.left; // 找到前驱节点
+                while (pred.right != null && pred.right != node) {
+                    pred = pred.right;
+                }
+                if (pred.right == null) {
+                    pred.right = node;
+                    node = node.left;
+                } else {
+                    pred.right = null;
+                    node = node.right;
+                }
+            } else {
+                node = node.right;
+            }
+        }
+
+        return list;
+    }*/
 }
