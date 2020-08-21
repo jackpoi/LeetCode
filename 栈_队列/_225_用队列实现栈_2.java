@@ -8,11 +8,11 @@ import java.util.Queue;
  *
  * @author beastars
  */
-public class _225_用队列实现栈2 {
+public class _225_用队列实现栈_2 {
     private Queue<Integer> queue;
 
     /** Initialize your data structure here. */
-    public _225_用队列实现栈2() {
+    public _225_用队列实现栈_2() {
         queue = new LinkedList<>();
     }
 
