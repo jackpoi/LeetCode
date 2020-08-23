@@ -5,7 +5,7 @@ package 数学;
  *
  * @author beastars
  */
-public class 剑指Offer_62_圆圈中最后剩下的数字 {
+public class _剑指Offer_62_圆圈中最后剩下的数字 {
     /**
      * 递归
      * 公式： f(n, m) = (f(n-1, m) + m) % n
