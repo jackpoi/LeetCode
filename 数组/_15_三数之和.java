@@ -21,13 +21,13 @@ public class _15_三数之和 {
 
         Arrays.sort(nums); // 先排好序
 
-        int midIdx = nums.length - 3; // 指向三元组的第二个元素
-        int lastIdx = nums.length - 1; // 指向三元组的最后一个元素
+        int midIdx = nums.length - 3; // 三元组的第一个元素的最大界限
+        int lastIdx = nums.length - 1; // 三元组的最后一个元素的最大界限
         for (int i = 0; i <= midIdx; i++) { // i指向三元组第一个元素
             if (i > 0 && nums[i - 1] == nums[i]) // 如果前一个元素和当前元素相同，跳过，去重
                 continue;
-            int left = i + 1;
-            int right = lastIdx;
+            int left = i + 1; // 指向三元组第二个元素
+            int right = lastIdx; // 指向三元组最后一个元素
             int remain = -nums[i];
             while (left < right) {
                 int sumLR = nums[left] + nums[right];

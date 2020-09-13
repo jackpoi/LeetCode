@@ -1,7 +1,5 @@
 package 链表;
 
-import javax.print.attribute.standard.NumberUp;
-
 /**
  * https://leetcode-cn.com/problems/merge-k-sorted-lists/
  *
