@@ -1,8 +1,6 @@
-package DFS;
+package 回溯;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * https://leetcode-cn.com/problems/coin-change/

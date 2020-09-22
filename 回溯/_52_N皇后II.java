@@ -1,4 +1,4 @@
-package DFS;
+package 回溯;
 
 /**
  * https://leetcode-cn.com/problems/n-queens-ii/
