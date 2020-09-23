@@ -10,9 +10,6 @@ import java.util.Arrays;
 public class _605_种花问题 {
     /**
      * 前后添0，每有三个连续的0就能种一朵花
-     * @param flowerbed
-     * @param n
-     * @return
      */
     public boolean canPlaceFlowers2(int[] flowerbed, int n) {
         if (n == 0)
