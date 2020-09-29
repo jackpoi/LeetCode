@@ -44,13 +44,15 @@ public class _377_组合总和Ⅳ {
         if (target <= 0)
             return 0;
 
+        // dp[i] ：对于给定的由正整数组成且不存在重复数字的数组，和为 i 的组合的个数。
         int[] dp = new int[target + 1];
-        dp[0] = 1;
+        dp[0] = 1; // 表示如果那个硬币的面值刚刚好等于需要凑出的价值，这个就成为 1 种组合方案
 
+        // 状态转移方程 : dp[i] = dp[i - num1] + dp[i - num2] + ... + dp[i - num]
         for (int i = 1; i <= target; i++) {
             for (int num : nums) {
                 if (i >= num) {
-                    dp[i] = dp[i - num] + dp[i];
+                    dp[i] = dp[i - num] + dp[i]; // dp[i] 初始为0
                 }
             }
         }
