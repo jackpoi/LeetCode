@@ -50,7 +50,7 @@ public class _53_最大子序和 {
     /**
      * 暴力法
      * 超时
-     *  空间复杂度：O(1)，时间复杂度：O(n3)
+     * 空间复杂度：O(1)，时间复杂度：O(n3)
      */
     public int maxSubArray2_1(int[] nums) {
         if (nums == null || nums.length == 0)
