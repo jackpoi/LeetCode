@@ -1,7 +1,6 @@
 package 栈_队列;
 
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * https://leetcode-cn.com/problems/implement-queue-using-stacks/
