@@ -1,5 +1,6 @@
 package 栈_队列;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -14,14 +15,13 @@ import java.util.Stack;
  * @author beastars
  */
 public class _232_用栈实现队列 {
-
-    private Stack<Integer> inStack;
-    private Stack<Integer> outStack;
+    private LinkedList<Integer> inStack;
+    private LinkedList<Integer> outStack;
 
     /** Initialize your data structure here. */
     public _232_用栈实现队列() {
-        inStack = new Stack<>();
-        outStack = new Stack<>();
+        inStack = new LinkedList<>();
+        outStack = new LinkedList<>();
     }
 
     /** Push element x to the back of queue. */
