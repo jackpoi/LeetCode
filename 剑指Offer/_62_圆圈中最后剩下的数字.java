@@ -1,11 +1,11 @@
-package 数学;
+package 剑指Offer;
 
 /**
  * https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/
  *
  * @author beastars
  */
-public class _剑指Offer_62_圆圈中最后剩下的数字 {
+public class _62_圆圈中最后剩下的数字 {
     /**
      * 递归
      * 公式： f(n, m) = (f(n-1, m) + m) % n

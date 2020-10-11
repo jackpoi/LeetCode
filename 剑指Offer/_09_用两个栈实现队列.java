@@ -1,4 +1,4 @@
-package 栈_队列;
+package 剑指Offer;
 
 import java.util.LinkedList;
 import java.util.Stack;
@@ -8,11 +8,11 @@ import java.util.Stack;
  *
  * @author beastars
  */
-public class _剑指Offer09_用两个栈实现队列 {
+public class _09_用两个栈实现队列 {
     private LinkedList<Integer> inStack;
     private LinkedList<Integer> outStack;
 
-    public _剑指Offer09_用两个栈实现队列() {
+    public _09_用两个栈实现队列() {
         inStack = new LinkedList<>();
         outStack = new LinkedList<>();
     }
