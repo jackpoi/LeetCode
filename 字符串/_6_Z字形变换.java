@@ -9,6 +9,18 @@ import java.util.List;
  * @author beastars
  */
 public class _6_Z字形变换 {
+    /**
+     * 0     6      12        18
+     * 1   5 7   11 13    17
+     * 2 4   8 10   14 16
+     * 3     9      15
+     * 对于n行的, s中的第i个字符：
+     * 对余数进行判断
+     *
+     * i%(2n-2) == 0 ----> row0
+     * i%(2n-2) == 1 & 2n-2-1 ----> row1
+     * i%(2n-2) == 2 & 2n-2-2 ----> row2
+     */
     public String convert(String s, int numRows) {
         if (s == null || numRows > s.length() || numRows <= 1)
             return s;
