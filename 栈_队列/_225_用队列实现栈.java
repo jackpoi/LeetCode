@@ -13,19 +13,25 @@ public class _225_用队列实现栈 {
     private Queue<Integer> queue2;
     private Queue<Integer> tmp;
 
-    /** Initialize your data structure here. */
+    /**
+     * Initialize your data structure here.
+     */
     public _225_用队列实现栈() {
         queue1 = new LinkedList<>();
         queue2 = new LinkedList<>();
         tmp = new LinkedList<>();
     }
 
-    /** Push element x onto stack. */
+    /**
+     * Push element x onto stack.
+     */
     public void push(int x) {
         queue1.add(x);
     }
 
-    /** Removes the element on top of the stack and returns that element. */
+    /**
+     * Removes the element on top of the stack and returns that element.
+     */
     public int pop() {
         while (!(queue1.size() == 1)) { // 将队列1的前n-1个赋给队列2，队列1留下的就是最后进入的，即栈顶元素
             queue2.add(queue1.poll());
@@ -36,7 +42,9 @@ public class _225_用队列实现栈 {
         return queue2.poll(); // 将队列2也就是原来的队列1最后一个元素弹出，清空队列2
     }
 
-    /** Get the top element. */
+    /**
+     * Get the top element.
+     */
     public int top() {
         while (!(queue1.size() == 1)) {
             queue2.add(queue1.poll());
@@ -49,7 +57,9 @@ public class _225_用队列实现栈 {
         return top;
     }
 
-    /** Returns whether the stack is empty. */
+    /**
+     * Returns whether the stack is empty.
+     */
     public boolean empty() {
         return queue1.isEmpty();
     }

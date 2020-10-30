@@ -39,13 +39,13 @@ public class _605_种花问题 {
             return n <= 1 && flowerbed[0] == 0;
 
         // [0, 0, ...]的特殊情况
-        if (flowerbed[0] == 0 && flowerbed[1] == 0){
+        if (flowerbed[0] == 0 && flowerbed[1] == 0) {
             flowerbed[0] = 1;
             n--;
         }
 
         // [...,0, 0]的特殊情况
-        if (flowerbed[flowerbed.length - 1] == 0 && flowerbed[flowerbed.length - 2] == 0){
+        if (flowerbed[flowerbed.length - 1] == 0 && flowerbed[flowerbed.length - 2] == 0) {
             flowerbed[flowerbed.length - 1] = 1;
             n--;
         }

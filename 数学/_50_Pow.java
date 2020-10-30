@@ -16,7 +16,7 @@ public class _50_Pow {
             return 1;
 
         if (n == -1)
-            return 1/x;
+            return 1 / x;
 
         boolean odd = (n & 1) == 1; // 如果与上1为1，说明是奇数
         double half = myPow(x, n >> 1);

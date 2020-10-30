@@ -20,11 +20,11 @@ public class _22_括号生成 {
     }
 
     /**
-     * @param index 搜索的层号
-     * @param leftRemain 左括号“（”的剩余数量
+     * @param index       搜索的层号
+     * @param leftRemain  左括号“（”的剩余数量
      * @param rightRemain 右括号“）”的剩余数量
-     * @param chars 有效的括号组合
-     * @param list 放入集合
+     * @param chars       有效的括号组合
+     * @param list        放入集合
      */
     private void dfs(int index, int leftRemain, int rightRemain,
                      char[] chars, List<String> list) {

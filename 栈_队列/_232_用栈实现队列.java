@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 /**
  * https://leetcode-cn.com/problems/implement-queue-using-stacks/
- *
+ * <p>
  * 准备2个栈：inStack、outStack
  * 入队时，push 到 inStack 中
  * 出队时
@@ -17,18 +17,24 @@ public class _232_用栈实现队列 {
     private LinkedList<Integer> inStack;
     private LinkedList<Integer> outStack;
 
-    /** Initialize your data structure here. */
+    /**
+     * Initialize your data structure here.
+     */
     public _232_用栈实现队列() {
         inStack = new LinkedList<>();
         outStack = new LinkedList<>();
     }
 
-    /** Push element x to the back of queue. */
+    /**
+     * Push element x to the back of queue.
+     */
     public void push(int x) {
         inStack.push(x);
     }
 
-    /** Removes the element from in front of queue and returns that element. */
+    /**
+     * Removes the element from in front of queue and returns that element.
+     */
     public int pop() {
         if (outStack.isEmpty()) {
             while (!inStack.isEmpty()) {
@@ -38,7 +44,9 @@ public class _232_用栈实现队列 {
         return outStack.pop();
     }
 
-    /** Get the front element. */
+    /**
+     * Get the front element.
+     */
     public int peek() {
         if (outStack.isEmpty()) {
             while (!inStack.isEmpty()) {
@@ -48,7 +56,9 @@ public class _232_用栈实现队列 {
         return outStack.peek();
     }
 
-    /** Returns whether the queue is empty. */
+    /**
+     * Returns whether the queue is empty.
+     */
     public boolean empty() {
         return inStack.isEmpty() && outStack.isEmpty();
     }

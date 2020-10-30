@@ -25,6 +25,7 @@ public class _114_二叉树展开为链表 {
 
     // 递归
     TreeNode pre = null;
+
     public void flatten2(TreeNode root) {
         if (root == null)
             return;

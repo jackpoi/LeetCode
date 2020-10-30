@@ -32,9 +32,9 @@ public class _300_最长上升子序列 {
     /**
      * 二分搜索，返回对应的索引
      *
-     * @param nums  目标数组
-     * @param n     元素
-     * @param end   搜索的结束索引, begin 搜索的起始索引 [begin, end)
+     * @param nums 目标数组
+     * @param n    元素
+     * @param end  搜索的结束索引, begin 搜索的起始索引 [begin, end)
      * @return 第一个大于等于元素 n 的元素索引
      */
     private int search(int[] nums, int n, int end) {

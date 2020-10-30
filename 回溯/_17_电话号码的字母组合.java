@@ -17,6 +17,7 @@ public class _17_电话号码的字母组合 {
             {'j', 'k', 'l'}, {'m', 'n', 'o'}, {'p', 'q', 'r', 's'},
             {'t', 'u', 'v'}, {'w', 'x', 'y', 'z'}
     };
+
     public List<String> letterCombinations(String digits) {
         if (digits == null)
             return null;
@@ -39,6 +40,7 @@ public class _17_电话号码的字母组合 {
      * 1        3       d   e   f
      * 2        4       g   h   i
      * 3    存储，返回上一层
+     *
      * @param index 搜索第index层
      */
     private void dfs(int index) {

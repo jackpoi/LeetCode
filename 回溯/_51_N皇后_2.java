@@ -57,7 +57,7 @@ public class _51_N皇后_2 {
             leftTop[ltIdx] = true;
             rightTop[rtIdx] = true;
             // 回溯
-            place(row  + 1);
+            place(row + 1);
             // 还原现场
             cols[col] = false;
             leftTop[ltIdx] = false;

@@ -22,7 +22,7 @@ public class _47_全排列II {
         return lists;
     }
 
-    private void dfs(int[] nums, List<List<Integer>> lists ,int index) {
+    private void dfs(int[] nums, List<List<Integer>> lists, int index) {
         if (index == nums.length) {
             List<Integer> result = new ArrayList<>();
             for (int num : nums) {

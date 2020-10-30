@@ -9,7 +9,9 @@ public class _155_最小栈 {
     private Stack<Integer> stack; // 正常存放数据
     private Stack<Integer> minStack; // 存放当前栈中最小数，和stack一一对应，同时pop同时push
 
-    /** initialize your data structure here. */
+    /**
+     * initialize your data structure here.
+     */
     public _155_最小栈() {
         stack = new Stack<>();
         minStack = new Stack<>();
