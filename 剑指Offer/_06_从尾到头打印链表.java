@@ -24,6 +24,7 @@ public class _06_从尾到头打印链表 {
         }
 
         int[] res = new int[count];
+        curr = head; // 不修改原链表
         // 从后往前接收链表的值
         for (int i = count - 1; i >= 0; i--) {
             res[i] = head.val;
