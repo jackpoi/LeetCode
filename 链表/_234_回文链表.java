@@ -1,6 +1,8 @@
 package 链表;
 
 /**
+ * https://leetcode-cn.com/problems/palindrome-linked-list/
+ *
  * @author beastars
  */
 public class _234_回文链表 {
