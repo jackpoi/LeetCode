@@ -6,6 +6,9 @@ package 链表;
  * @author beastars
  */
 public class _23_合并K个排序链表 {
+    /**
+     * 把多个链表进行划分，直到两两一组，就可以将两个有序链表进行合并
+     */
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0)
             return null;

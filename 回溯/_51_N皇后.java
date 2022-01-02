@@ -15,7 +15,7 @@ public class _51_N皇后 {
         if (n < 1)
             return lists;
 
-        int[] cols = new int[n]; // 索引是行row，值是列col，cols[2,3]代表第二行第三列有皇后
+        int[] cols = new int[n]; // 索引是行row，值是列col，cols[2]=3代表第二行第三列有皇后
 
         place(cols, 0, lists);
 
